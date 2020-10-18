@@ -19,7 +19,15 @@ class Question:
     >>> q.setAnswer('new answer')
     >>> q.getAnswer()
     'new answer'
+    >>> q.verify()
+    -1
+    >>> q.setUserAnswer('99')
+    >>> q.getUserAnswer()
+    '99'
+    >>> q.verify()
+    False
     '''
+    
     def __init__(self, text: str, answer: str):
         # check parameter
         if not isinstance(text, str):
@@ -28,6 +36,7 @@ class Question:
             raise TypeError('answer must be string!')
         self._text = text
         self._answer = answer
+        self._userAnswer = None
     
     def setText(self, text: str):
         # check user input
@@ -47,37 +56,60 @@ class Question:
     def getAnswer(self):
         return self._answer
 
-class estimQuestion(Question):
-    def __init__(self, text: str, answer: str):
+    def setUserAnswer(self, userAnswer: str):
+        # check input
+        if not isinstance(userAnswer, str):
+            raise TypeError('userAnswer must be string!')
+        self._userAnswer = userAnswer
+        
+    def getUserAnswer(self):
+        return self._userAnswer
+    
+    def verify(self):
+     '''
+     Return -1: no user input, True, False
+     '''
+     if self._userAnswer:
+         return self._userAnswer == self._answer
+     return -1
+    
+       
+class MCQ(Question):
+    '''
+    Multiple Choice Question
+    
+    DocTest
+    >>> m = MCQ('test', 'right answer')
+    >>> m.setWrong('wrong1', 'wrong2')
+    >>> m.getWrong()
+    ('wrong1', 'wrong2')
+    >>> m.setUserAnswer(m.getWrong()[0])
+    >>> m.verify()
+    False
+    '''
+    
+    def __init__(self, text, answer):
         # check parameter
         if not isinstance(text, str):
             raise TypeError('text must be string!')  
         if not isinstance(answer, str):
             raise TypeError('answer must be string!')
         super().__init__(text, answer)
-        self._userInp = None
+        self._wrongOne = None
+        self._wrongTwo = None
+        self._userChoice = None
     
-    def setUserInp(self, userInp: str):
-        # check input
-        if not isinstance(userInp, str):
-            raise TypeError('userInp must be string!')
-        self._userInp = userInp
-        
-    def getUserInp(self):
-        return self._userInp
+    def setWrong(self, wrongOne: str, wrongTwo: str):
+        # check parameters
+        if not isinstance(wrongOne, str) or not isinstance(wrongTwo, str):
+            raise TypeError('setWrong recuires string as arguments')
+        self._wrongOne, self._wrongTwo = wrongOne, wrongTwo
     
-    def verify(self):
-        '''
-        Returns -1: no user input, True, False
-        '''
-        if self._userInp:
-            return self._userInp == self._answer
-        return -1
-        
-e = estimQuestion('estimation', 'B')
-e.setUserInp('B')
-print(e.verify())
+    def getWrong(self):
+        return self._wrongOne, self._wrongTwo
+    
 
+    
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
