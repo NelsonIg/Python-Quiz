@@ -4,96 +4,96 @@ Created on Sat Oct 17 14:36:36 2020
 
 @author: nelso
 """
-import pandas as pd
 import os
+import pandas as pd
+
 class Question:
     '''
     Base Class for Questions
-        ATTR: __text, __answer, _userAnswer & _type= 'QandA'
+        ATTR: __text, __answer, _user_answer & _type= 'QandA'
         METHS: setter & getter
     DocTest
     >>> q = Question('text', 'answer')
-    >>> q.getType()
+    >>> q.get_type()
     'QandA'
-    >>> q.setText('new text')
-    >>> q.getText()
+    >>> q.set_text('new text')
+    >>> q.get_text()
     'new text'
-    >>> q.setAnswer('new answer')
-    >>> q.getAnswer()
+    >>> q.set_answer('new answer')
+    >>> q.get_answer()
     'new answer'
     >>> q.verify()
     -1
-    >>> q.setUserAnswer('99')
-    >>> q.getUserAnswer()
+    >>> q.set_user_answer('99')
+    >>> q.get_user_answer()
     '99'
     >>> q.verify()
     False
     '''
-    
+
     def __init__(self, text: str, answer: str):
         # check parameter
         if not isinstance(text, str):
-            raise TypeError('text must be string!')  
+            raise TypeError('text must be string!')
         if not isinstance(answer, str):
             raise TypeError('answer must be string!')
         self._text = text
         self._answer = answer
-        self._userAnswer = None
+        self._user_answer = None
         self._type = "QandA"
     
     # Setter & Getter ---------------------------------------------------------
-    def setText(self, text: str):
+    def set_text(self, text: str):
         # check user input
         if not isinstance(text, str):
             raise TypeError('text must be string!')
         self._text = text
     
-    def getText(self):
+    def get_text(self):
         return self._text
    
-    def setAnswer(self, answer: str):
+    def set_answer(self, answer: str):
         # check user input
         if not isinstance(answer, str):
             raise TypeError('answer must be string!')
         self._answer = answer
     
-    def getAnswer(self):
+    def get_answer(self):
         return self._answer
 
-    def setUserAnswer(self, userAnswer: str):
+    def set_user_answer(self, user_answer: str):
         # check input
-        if not isinstance(userAnswer, str):
-            raise TypeError('userAnswer must be string!')
-        self._userAnswer = userAnswer
+        if not isinstance(user_answer, str):
+            raise TypeError('user_answer must be string!')
+        self._user_answer = user_answer
         
-    def getUserAnswer(self):
-        return self._userAnswer
+    def get_user_answer(self):
+        return self._user_answer
     
-    def getType(self):
+    def get_type(self):
         return self._type
     # -------------------------------------------------------------------------
     
     def verify(self):
-     '''
-     Return -1: no user input, True, False
-     '''
-     if self._userAnswer:
-         return self._userAnswer == self._answer
-     return -1
-    
-       
+        '''
+        Return -1: no user input, True, False
+        '''
+        if self._user_answer:
+            return self._user_answer == self._answer
+        return -1
+
 class MCQ(Question):
     '''
     Multiple Choice Question
     
     DocTest
     >>> m = MCQ('test', 'right answer')
-    >>> m.getType()
+    >>> m.get_type()
     'MCQ'
-    >>> m.setWrong('wrong1', 'wrong2')
-    >>> m.getWrong()
+    >>> m.set_wrong('wrong1', 'wrong2')
+    >>> m.get_wrong()
     ('wrong1', 'wrong2')
-    >>> m.setUserAnswer(m.getWrong()[0])
+    >>> m.set_user_answer(m.get_wrong()[0])
     >>> m.verify()
     False
     '''
@@ -110,13 +110,13 @@ class MCQ(Question):
         self._userChoice = None
         self._type = 'MCQ'
     
-    def setWrong(self, wrongOne: str, wrongTwo: str):
+    def set_wrong(self, wrongOne: str, wrongTwo: str):
         # check parameters
         if not isinstance(wrongOne, str) or not isinstance(wrongTwo, str):
-            raise TypeError('setWrong recuires string as arguments')
+            raise TypeError('set_wrong recuires string as arguments')
         self._wrongOne, self._wrongTwo = wrongOne, wrongTwo
     
-    def getWrong(self):
+    def get_wrong(self):
         return self._wrongOne, self._wrongTwo
     
 def writeQtoCsv(filename: str, q_type: str, text: str,
@@ -139,7 +139,7 @@ def writeQtoCsv(filename: str, q_type: str, text: str,
             f.write('type,text,answer,wrong1,wrong2\n')
             f.write(q_type+','+text+','+answer+','+wrong1+','+wrong2+'\n')
 
-def loadQuestions(filename: str, quest_no: int):
+def load_questioin(filename: str, quest_no: int):
     ''' load question from filname.csv'''
     if not os.path.exists('./'+filename):
         raise Exception('file not found')
