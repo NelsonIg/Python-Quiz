@@ -7,6 +7,12 @@ Created on Sat Oct 17 14:36:36 2020
 import os
 import pandas as pd
 
+def is_string(var, var_name: str):
+    ''' Check if var is instance of STRING
+        Does nothing if var is string, raises TypeError if not
+    '''
+    if not isinstance(var, str):
+            raise TypeError(var_name+' must be string!')
 class Question:
     '''
     Base Class for Questions
@@ -33,10 +39,8 @@ class Question:
 
     def __init__(self, text: str, answer: str):
         # check parameter
-        if not isinstance(text, str):
-            raise TypeError('text must be string!')
-        if not isinstance(answer, str):
-            raise TypeError('answer must be string!')
+        is_string(text, 'text')
+        is_string(answer, 'answer')
         self._text = text
         self._answer = answer
         self._user_answer = None
@@ -45,8 +49,7 @@ class Question:
     # Setter & Getter ---------------------------------------------------------
     def set_text(self, text: str):
         # check user input
-        if not isinstance(text, str):
-            raise TypeError('text must be string!')
+        is_string(text, 'text')
         self._text = text
     
     def get_text(self):
@@ -54,8 +57,7 @@ class Question:
    
     def set_answer(self, answer: str):
         # check user input
-        if not isinstance(answer, str):
-            raise TypeError('answer must be string!')
+        is_string(answer, 'answer')
         self._answer = answer
     
     def get_answer(self):
@@ -63,8 +65,7 @@ class Question:
 
     def set_user_answer(self, user_answer: str):
         # check input
-        if not isinstance(user_answer, str):
-            raise TypeError('user_answer must be string!')
+        is_string(user_answer, 'user_answer')
         self._user_answer = user_answer
         
     def get_user_answer(self):
@@ -100,10 +101,8 @@ class MCQ(Question):
     
     def __init__(self, text, answer, wrong_one=None,  wrong_two=None):
         # check parameter
-        if not isinstance(text, str):
-            raise TypeError('text must be string!')  
-        if not isinstance(answer, str):
-            raise TypeError('answer must be string!')
+        is_string(text, 'text')
+        is_string(answer, 'answer')
         super().__init__(text, answer)
         self._wrong_one = wrong_one
         self._wrong_two = wrong_two
@@ -119,30 +118,31 @@ class MCQ(Question):
     def get_wrong(self):
         return self._wrong_one, self._wrong_two
     
-def writeQtoCsv(filename: str, q_type: str, text: str,
+def write_q2csv(filename: str, q_type: str, text: str,
                 answer: str, wrong1='', wrong2=''):
     ''' writes question to filname.csv'''
+    COLUMNS = 'type,text,answer,wrong1,wrong2'
     if os.path.exists('./'+filename):
         # file already in repository
         with open(filename, 'r') as f:
             first_line = f.readline()
-        if first_line=='type,text,answer,wrong1,wrong2\n':
+        if first_line==COLUMNS+'\n':
             # file already initialized
             with open(filename, 'a') as f:
                 f.write(q_type+','+text+','+answer+','+wrong1+','+wrong2+'\n')
         else:
             with open(filename, 'w') as f:
-                f.write('type,text,answer,wrong1,wrong2\n')
+                f.write(COLUMNS+'\n')
                 f.write(q_type+','+text+','+answer+','+wrong1+','+wrong2+'\n')
     else:
         with open(filename, 'w') as f:
-            f.write('type,text,answer,wrong1,wrong2\n')
+            f.write(COLUMNS+'\n')
             f.write(q_type+','+text+','+answer+','+wrong1+','+wrong2+'\n')
 
 def load_question(filename: str, quest_no: int):
     ''' load question from filname.csv'''
     if not os.path.exists('./'+filename):
-        raise Exception('file not found')
+        raise FileNotFoundError ('file not found')
     df = pd.read_csv(filename, nrows=quest_no)
     questions = list()
     for idx, row in df.iterrows():
@@ -152,6 +152,7 @@ def load_question(filename: str, quest_no: int):
             questions.append(MCQ(row['text'], row['answer'],
                                  row['wrong1'], row['wrong2']))
         else:
+            # Question Type not unknown
             pass
     return questions
 
