@@ -32,8 +32,8 @@ class Quiz:
         '''display one question at a time and check if user is right'''
         print('Quiz started:', f'{len(self._questions)} Questions')
         for question in self._questions:
-            quiz.display_question(question)
-            if quiz.check_answer(question):
+            self.display_question(question)
+            if self.check_answer(question):
                 # increas score by 1
                 self.set_score(self.get_score()+1)
                 print('Correct!')
@@ -41,6 +41,6 @@ class Quiz:
                 print('Not Correct!')
         print(f'You have {self.get_score()} of {len(self._questions)} right!')
 
-questions = [gd.Question(f'text{i}', f'answer{i}') for i in range(3)]
-quiz = Quiz(*questions)
-quiz.start_quiz()
+# questions = [gd.Question(f'text{i}', f'answer{i}') for i in range(3)]
+# quiz = Quiz(*questions)
+# quiz.start_quiz()
