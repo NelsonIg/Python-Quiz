@@ -142,7 +142,7 @@ def write_q2csv(filename: str, q_type: str, text: str,
 def load_question(filename: str, quest_no: int):
     ''' load question from filname.csv'''
     if not os.path.exists('./'+filename):
-        raise FileNotFoundError ('file not found')
+        raise FileNotFoundError (filename+' not found')
     df = pd.read_csv(filename, nrows=quest_no)
     questions = list()
     for idx, row in df.iterrows():
