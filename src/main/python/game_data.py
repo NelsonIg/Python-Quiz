@@ -14,29 +14,7 @@ def is_string(var, var_name: str):
     if not isinstance(var, str):
             raise TypeError(var_name+' must be string!')
 class Question:
-    '''
-    Base Class for Questions
-        ATTR: __text, __answer, _user_answer & _type= 'QandA'
-        METHS: setter & getter
-    DocTest
-    >>> q = Question('text', 'answer')
-    >>> q.get_type()
-    'QandA'
-    >>> q.set_text('new text')
-    >>> q.get_text()
-    'new text'
-    >>> q.set_answer('new answer')
-    >>> q.get_answer()
-    'new answer'
-    >>> q.verify()
-    -1
-    >>> q.set_user_answer('99')
-    >>> q.get_user_answer()
-    '99'
-    >>> q.verify()
-    False
-    '''
-
+    
     def __init__(self, text: str, answer: str):
         # check parameter
         is_string(text, 'text')
@@ -84,21 +62,7 @@ class Question:
         return -1
 
 class MCQ(Question):
-    '''
-    Multiple Choice Question
-    
-    DocTest
-    >>> m = MCQ('test', 'right answer')
-    >>> m.get_type()
-    'MCQ'
-    >>> m.set_wrong('wrong1', 'wrong2')
-    >>> m.get_wrong()
-    ('wrong1', 'wrong2')
-    >>> m.set_user_answer(m.get_wrong()[0])
-    >>> m.verify()
-    False
-    '''
-    
+     
     def __init__(self, text, answer, wrong_one=None,  wrong_two=None):
         # check parameter
         is_string(text, 'text')
@@ -156,7 +120,4 @@ def load_question(filename: str, quest_no: int):
             pass
     return questions
 
-    
-if __name__ == '__main__':
-    import doctest
-    doctest.testmod()
+
