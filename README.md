@@ -6,4 +6,4 @@
 2. [Package Diagram](checklist/UML/png/package.png)
 3. [Class Diagramm](checklist/UML/png/class.png)  
 ### CDD  
-1. [Cheat Sheet](checklist/CDD/CCD_cheatsheet.pdy)
+1. [Cheat Sheet](checklist/CDD/CCD_cheatsheet.pdf)
