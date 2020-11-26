@@ -1,4 +1,3 @@
-# Ubunut commit
 # Python-Quiz
 ## Checklist
 ### UML  
