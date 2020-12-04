@@ -1,5 +1,5 @@
 import unittest, os
-from game_data import is_string, Question, MCQ
+from game_data import is_string, Question, MCQ, write_q2csv
 
 class QuestionTest(unittest.TestCase):
    def test_is_string(self):
