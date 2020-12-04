@@ -1,4 +1,4 @@
-import unittest
+import unittest, os
 from game_data import is_string, Question, MCQ
 
 class QuestionTest(unittest.TestCase):
@@ -62,3 +62,11 @@ class MCQTest(unittest.TestCase):
       # get_wrong
       q.set_wrong('wrong1', 'wrong2')
       self.assertEqual(q.get_wrong(), ('wrong1', 'wrong2'))
+
+class LoadWriteTest(unittest.TestCase):
+   def test_write_q2csv(self):
+      # Test: Create new csv file
+      filename='test_question.csv'
+      write_q2csv(filename, 'QandA', '1+1', '2')
+      # Test existence of file
+      self.assertTrue(os.path.exists('./'+filename)
