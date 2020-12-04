@@ -34,7 +34,7 @@ class Quiz:
         for question in self._questions:
             self.display_question(question)
             if self.check_answer(question):
-                # increas score by 1
+                # increase score by 1
                 self.set_score(self.get_score()+1)
                 print('Correct!')
             else:
