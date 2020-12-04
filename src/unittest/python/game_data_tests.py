@@ -69,4 +69,4 @@ class LoadWriteTest(unittest.TestCase):
       filename='test_question.csv'
       write_q2csv(filename, 'QandA', '1+1', '2')
       # Test existence of file
-      self.assertTrue(os.path.exists('./'+filename)
+      self.assertTrue(os.path.exists('./'+filename))
