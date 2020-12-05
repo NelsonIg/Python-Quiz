@@ -13,6 +13,6 @@ class ControllerTest(unittest.TestCase):
         q.get_text.return_value = '1+1'
         q.get_answer.return_value = '2'
         with mock.patch.object(builtins, 'input', lambda _: '2'):
-            quiz = Quiz(q)
+            quiz = gc.Quiz(q)
         
         
