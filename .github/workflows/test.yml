@@ -25,7 +25,7 @@ jobs:
       run: |
         pwd
         ls
-        cd pytest\src
+        cd pytest/src
         ls
         # pip install pytest
         # pytest 
