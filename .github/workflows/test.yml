@@ -24,6 +24,7 @@ jobs:
     - name: Test with pytest
       run: |
         pwd
+        ls
         # cd .\pytest\src
         # pip install pytest
         # pytest 
