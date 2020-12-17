@@ -9,4 +9,4 @@
 ### CDD  
 1. [Cheat Sheet](checklist/CCD/CCD_cheatsheet.pdf)
 ### Build
-1. [Cheat Sheet](https://github.com/nelson-bht/Python-Quiz/tree/main/build_manag)
+1. [Build Folder](https://github.com/nelson-bht/Python-Quiz/tree/main/build_manag)
