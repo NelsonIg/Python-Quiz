@@ -27,3 +27,8 @@ For this build **pyBuilder** is used, which executes a Unittest for [game_data.p
 * [Run Build](https://github.com/nelson-bht/Python-Quiz/blob/main/checklist/build_manag/build_run.JPG)
 ### 7. CD
 1. [Pipeline](https://github.com/nelson-bht/Python-Quiz/blob/main/.github/workflows/test.yml)
+### 8. IDE  
+Spider IDE is used, which comes with Anaconda. Shortcuts:
+* Strg+1: Toggle Commented Lines
+* Strg+4: Insert block comment with describtion header
+* Strg+Enter: Run Code
