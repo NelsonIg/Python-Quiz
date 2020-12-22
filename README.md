@@ -16,7 +16,9 @@ When the user opens the application, he must enter his login information which w
 * [Function](https://github.com/nelson-bht/Python-Quiz/blob/a00056d6df7eba49effaaa34c9b227612e51c13a/build_manag/src/main/python/game_data.py#L10-L15)  
 Create small function with descriptive name, without side effects.  
 * [Naming](https://github.com/nelson-bht/Python-Quiz/blob/a00056d6df7eba49effaaa34c9b227612e51c13a/build_manag/src/main/python/game_gui.py#L7-L23)  
-Naming of classes and functions according to convention: Classes --> CamalCase, Functions --> lower_case
+Naming of classes and functions according to convention: Classes --> CamalCase, Functions --> lower_case  
+* [Comments](https://github.com/nelson-bht/Python-Quiz/blob/a00056d6df7eba49effaaa34c9b227612e51c13a/build_manag/src/main/python/game_data.py#L10-L15)  
+Explaning functions and possible consequences
 ### 5. Build
 1. [Build Folder](https://github.com/nelson-bht/Python-Quiz/tree/main/build_manag)
 ### 7. CD
