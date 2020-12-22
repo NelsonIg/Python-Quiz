@@ -12,7 +12,8 @@ When the user opens the application, he must enter his login information which w
 [Lines of Code/ Commented Lines](checklist/Metrics/lines_code_comments.JPG)  
 [Classes/ Functions](checklist/Metrics/classes_functions.jpg)
 ### 4. CCD  
-1. [Cheat Sheet](checklist/CCD/CCD_cheatsheet.pdf)  
+[Cheat Sheet](checklist/CCD/CCD_cheatsheet.pdf)  
+* [Function](https://github.com/nelson-bht/Python-Quiz/blob/a00056d6df7eba49effaaa34c9b227612e51c13a/build_manag/src/main/python/game_data.py#L10-L15)
 ### 5. Build
 1. [Build Folder](https://github.com/nelson-bht/Python-Quiz/tree/main/build_manag)
 ### 7. CD
