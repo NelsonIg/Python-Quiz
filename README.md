@@ -22,6 +22,7 @@ Explaning functions and possible consequences.
 * [Lines](https://github.com/nelson-bht/Python-Quiz/blob/ae51755588bb356569f1d3f049adc9b545e9d134/build_manag/src/main/python/game_gui.py#L1-L85)  
 Keeping lines short.
 ### 5. Build
-1. [Build Folder](https://github.com/nelson-bht/Python-Quiz/tree/main/build_manag)
+* [Unittests to be called](https://github.com/nelson-bht/Python-Quiz/blob/main/checklist/build_manag/src/unittest/python/game_data_tests.py)
+* [Run Build]()
 ### 7. CD
 1. [Actions](https://github.com/nelson-bht/Python-Quiz/actions)
