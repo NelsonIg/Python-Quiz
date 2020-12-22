@@ -5,7 +5,7 @@
 2. [Package Diagram](checklist/UML/package.png)
 3. [Class Diagram](checklist/UML/class.png)  
 ### 2. DDD  
-[DDD](checklist/UML/DDD.png) 
+[DDD](checklist/DDD/DDD.png) 
 ### 4. CCD  
 1. [Cheat Sheet](checklist/CCD/CCD_cheatsheet.pdf)  
 ### 5. Build
