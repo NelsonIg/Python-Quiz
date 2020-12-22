@@ -26,4 +26,4 @@ jobs:
         pip install -r requirements_pip.txt
         pip install pytest
         # pip install pandas
-        pytest ./pytest/src
+        pytest .checklist/pytest/src
