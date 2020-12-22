@@ -32,3 +32,5 @@ Spider IDE is used, which comes with Anaconda. Shortcuts:
 * Strg+1: Toggle Commented Lines
 * Strg+4: Insert block comment with describtion header
 * Strg+Enter: Run Code
+### 9 DSL  
+[Class Question as DSL](https://github.com/nelson-bht/Python-Quiz/blob/b50cd3e4397e78e0490b672486953ac8a36e1feb/checklist/DSL/question_dsl.py#L60-L63)
