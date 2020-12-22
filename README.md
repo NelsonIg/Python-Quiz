@@ -26,4 +26,4 @@ For this build **pyBuilder** is used, which executes a Unittest for [game_data.p
 * [Unittests to be called](https://github.com/nelson-bht/Python-Quiz/blob/main/checklist/build_manag/src/unittest/python/game_data_tests.py)  
 * [Run Build](https://github.com/nelson-bht/Python-Quiz/blob/main/checklist/build_manag/build_run.JPG)
 ### 7. CD
-1. [Actions](https://github.com/nelson-bht/Python-Quiz/actions)
+1. [Pipeline](https://github.com/nelson-bht/Python-Quiz/blob/main/.github/workflows/test.yml)
