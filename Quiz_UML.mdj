@@ -575,7 +575,7 @@
 									"font": "Arial;13;0",
 									"left": 423,
 									"top": 427.5,
-									"width": 147,
+									"width": 147.9853515625,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF1IrZ89m7JEW8="
@@ -1320,7 +1320,7 @@
 									"font": "Arial;13;0",
 									"left": 833.5,
 									"top": 279,
-									"width": 123,
+									"width": 123.419921875,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF1IsG313E7mK4="
@@ -1614,7 +1614,7 @@
 									"font": "Arial;13;0",
 									"left": 739,
 									"top": 443,
-									"width": 89,
+									"width": 90.18359375,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF1IsuvEHSyIC4="
@@ -1907,7 +1907,7 @@
 									"font": "Arial;13;0",
 									"left": 901,
 									"top": 447,
-									"width": 140,
+									"width": 140.03173828125,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF1IsypbXVRs+E="
@@ -2163,11 +2163,11 @@
 												"$ref": "AAAAAAF1Is66W3d55Yk="
 											},
 											"font": "Arial;13;1",
-											"left": 405,
+											"left": 406.5,
 											"top": 554,
-											"width": 67,
+											"width": 74,
 											"height": 13,
-											"text": "Creat MCQ"
+											"text": "Create MCQ"
 										},
 										{
 											"_type": "LabelView",
@@ -2198,9 +2198,9 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 400,
+									"left": 401.5,
 									"top": 547,
-									"width": 77,
+									"width": 84.4072265625,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF1Is66XHd6dPM="
@@ -2300,7 +2300,7 @@
 							"containerChangeable": true,
 							"left": 384,
 							"top": 528,
-							"width": 109,
+							"width": 119,
 							"height": 64,
 							"nameCompartment": {
 								"$ref": "AAAAAAF1Is66W3d55Yk="
@@ -2344,7 +2344,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 451,
+									"left": 453,
 									"top": 491,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -2365,7 +2365,7 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 437,
+									"left": 439,
 									"top": 485,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -2386,7 +2386,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 478,
+									"left": 480,
 									"top": 504,
 									"height": 13,
 									"alpha": -1.5707963267948966,
@@ -2405,7 +2405,7 @@
 								"$ref": "AAAAAAF1Is66W3d4+rM="
 							},
 							"lineStyle": 1,
-							"points": "454:527;476:481",
+							"points": "457:527;478:481",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF1Is7wM3fjP94="
@@ -2445,8 +2445,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -432,
-											"top": -32,
+											"left": -448,
+											"top": -48,
 											"height": 13
 										},
 										{
@@ -2456,11 +2456,11 @@
 												"$ref": "AAAAAAF1Is8PDnhJg+c="
 											},
 											"font": "Arial;13;1",
-											"left": 543.5,
-											"top": 558,
-											"width": 116,
+											"left": 537,
+											"top": 550,
+											"width": 123,
 											"height": 13,
-											"text": "Creat Estimation Q"
+											"text": "Create Estimation Q"
 										},
 										{
 											"_type": "LabelView",
@@ -2470,8 +2470,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -432,
-											"top": -32,
+											"left": -448,
+											"top": -48,
 											"width": 95.34814453125,
 											"height": 13,
 											"text": "(from Use Case)"
@@ -2484,16 +2484,16 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -432,
-											"top": -32,
+											"left": -448,
+											"top": -48,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 538.5,
-									"top": 551,
-									"width": 126,
+									"left": 532,
+									"top": 543,
+									"width": 134.25537109375,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF1Is8PDnhKt3w="
@@ -2519,8 +2519,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -168,
-									"top": -128,
+									"left": -176,
+									"top": -136,
 									"width": 10,
 									"height": 10
 								},
@@ -2535,8 +2535,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -168,
-									"top": -128,
+									"left": -176,
+									"top": -136,
 									"width": 10,
 									"height": 10
 								},
@@ -2551,8 +2551,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -168,
-									"top": -128,
+									"left": -176,
+									"top": -136,
 									"width": 10,
 									"height": 10
 								},
@@ -2567,8 +2567,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -168,
-									"top": -128,
+									"left": -176,
+									"top": -136,
 									"width": 10,
 									"height": 10
 								},
@@ -2583,17 +2583,17 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -168,
-									"top": -128,
+									"left": -176,
+									"top": -136,
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 512,
-							"top": 536,
-							"width": 179,
+							"left": 504,
+							"top": 528,
+							"width": 189,
 							"height": 56,
 							"nameCompartment": {
 								"$ref": "AAAAAAF1Is8PDnhJg+c="
@@ -2637,8 +2637,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 542,
-									"top": 511,
+									"left": 540,
+									"top": 507,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -2658,8 +2658,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 531,
-									"top": 521,
+									"left": 529,
+									"top": 517,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -2679,8 +2679,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 565,
-									"top": 492,
+									"left": 563,
+									"top": 488,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -2698,7 +2698,7 @@
 								"$ref": "AAAAAAF1Is8PDnhIVaI="
 							},
 							"lineStyle": 1,
-							"points": "577:535;531:481",
+							"points": "573:527;532:481",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF1Is99knjqBo8="
@@ -2952,7 +2952,7 @@
 					"_parent": {
 						"$ref": "AAAAAAF1IrBqX23r1/o="
 					},
-					"name": "Creat MCQ",
+					"name": "Create MCQ",
 					"ownedElements": [
 						{
 							"_type": "UMLGeneralization",
@@ -2975,7 +2975,7 @@
 					"_parent": {
 						"$ref": "AAAAAAF1IrBqX23r1/o="
 					},
-					"name": "Creat Estimation Q",
+					"name": "Create Estimation Q",
 					"ownedElements": [
 						{
 							"_type": "UMLGeneralization",
@@ -7680,7 +7680,8 @@
 								"$ref": "AAAAAAF1t8PiZZG/b/4="
 							},
 							"name": "MainMenu",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -7689,7 +7690,8 @@
 								"$ref": "AAAAAAF1t8PiZZG/b/4="
 							},
 							"name": "Editor",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -7698,7 +7700,8 @@
 								"$ref": "AAAAAAF1t8PiZZG/b/4="
 							},
 							"name": "Game",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						}
 					],
 					"operations": [
