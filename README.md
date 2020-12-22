@@ -21,7 +21,7 @@ Naming of classes and functions according to convention: Classes --> CamalCase, 
 Explaning functions and possible consequences.
 * [Lines](https://github.com/nelson-bht/Python-Quiz/blob/ae51755588bb356569f1d3f049adc9b545e9d134/build_manag/src/main/python/game_gui.py#L1-L85)  
 Keeping lines short.
-### 5. Build  
+### 5/6. Build & Unit-Tests
 For this build **pyBuilder** is used, which executes a Unittest for [game_data.py](https://github.com/nelson-bht/Python-Quiz/blob/main/checklist/build_manag/src/main/python/game_data.py).
 * [Unittests to be called](https://github.com/nelson-bht/Python-Quiz/blob/main/checklist/build_manag/src/unittest/python/game_data_tests.py)  
 * [Run Build](https://github.com/nelson-bht/Python-Quiz/blob/main/checklist/build_manag/build_run.JPG)
